@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-property-binding',
@@ -9,6 +9,6 @@ import { Component, Input } from '@angular/core';
 })
 export class PropertyBindingComponent {
 
-  @Input() result: number = 0;
+  result: number = 0;
 
 }
