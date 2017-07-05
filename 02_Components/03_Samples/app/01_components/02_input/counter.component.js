@@ -8,6 +8,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 // Свойства, которые будут устанавливаться
 var CounterComponent = (function () {
@@ -19,26 +20,23 @@ var CounterComponent = (function () {
     CounterComponent.prototype.increment = function () {
         this.counterValue = this.counterValue + this.counterStep;
     };
-    __decorate([
-        // данное свойство можно задать с помощью кода <counter name="Counter 1"></counter>
-        core_1.Input(), 
-        __metadata('design:type', Number)
-    ], CounterComponent.prototype, "counterValue", void 0);
-    __decorate([
-        // данное свойство можно задать с помощью кода <counter counterValue="10"></counter>
-        core_1.Input("step"), 
-        __metadata('design:type', Number)
-    ], CounterComponent.prototype, "counterStep", void 0);
-    CounterComponent = __decorate([
-        core_1.Component({
-            moduleId: module.id,
-            selector: "counter",
-            templateUrl: "counter.component.html",
-            inputs: ["name"]
-        }), 
-        __metadata('design:paramtypes', [])
-    ], CounterComponent);
     return CounterComponent;
 }());
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Number)
+], CounterComponent.prototype, "counterValue", void 0);
+__decorate([
+    core_1.Input("step"),
+    __metadata("design:type", Number)
+], CounterComponent.prototype, "counterStep", void 0);
+CounterComponent = __decorate([
+    core_1.Component({
+        moduleId: module.id,
+        selector: "counter",
+        templateUrl: "counter.component.html",
+        inputs: ["name"]
+    })
+], CounterComponent);
 exports.CounterComponent = CounterComponent;
 //# sourceMappingURL=counter.component.js.map

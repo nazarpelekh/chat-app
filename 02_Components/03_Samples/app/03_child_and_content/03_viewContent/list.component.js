@@ -8,6 +8,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var item_component_1 = require("./item.component");
 var ListComponent = (function () {
@@ -18,19 +19,19 @@ var ListComponent = (function () {
         this.count = this.items.length;
         this.items.forEach(function (x) { return x.changeData(); });
     };
-    __decorate([
-        core_1.ContentChildren(item_component_1.ItemComponent), 
-        __metadata('design:type', core_1.QueryList)
-    ], ListComponent.prototype, "items", void 0);
-    ListComponent = __decorate([
-        core_1.Component({
-            moduleId: module.id,
-            selector: "list",
-            templateUrl: "list.component.html"
-        }), 
-        __metadata('design:paramtypes', [])
-    ], ListComponent);
     return ListComponent;
 }());
+__decorate([
+    core_1.ContentChildren(item_component_1.ItemComponent) // Для получения доступа к компонентам полученым через ng-content
+    ,
+    __metadata("design:type", core_1.QueryList)
+], ListComponent.prototype, "items", void 0);
+ListComponent = __decorate([
+    core_1.Component({
+        moduleId: module.id,
+        selector: "list",
+        templateUrl: "list.component.html"
+    })
+], ListComponent);
 exports.ListComponent = ListComponent;
 //# sourceMappingURL=list.component.js.map

@@ -8,6 +8,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var TimerComponent = (function () {
     function TimerComponent() {
@@ -31,23 +32,22 @@ var TimerComponent = (function () {
         this.currentValue++;
         this.tick.emit(this.currentValue);
     };
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Number)
-    ], TimerComponent.prototype, "interval", void 0);
-    __decorate([
-        core_1.Output(), 
-        __metadata('design:type', core_1.EventEmitter)
-    ], TimerComponent.prototype, "tick", void 0);
-    TimerComponent = __decorate([
-        core_1.Component({
-            moduleId: module.id,
-            selector: "timer",
-            templateUrl: "timer.component.html"
-        }), 
-        __metadata('design:paramtypes', [])
-    ], TimerComponent);
     return TimerComponent;
 }());
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Number)
+], TimerComponent.prototype, "interval", void 0);
+__decorate([
+    core_1.Output(),
+    __metadata("design:type", core_1.EventEmitter)
+], TimerComponent.prototype, "tick", void 0);
+TimerComponent = __decorate([
+    core_1.Component({
+        moduleId: module.id,
+        selector: "timer",
+        templateUrl: "timer.component.html"
+    })
+], TimerComponent);
 exports.TimerComponent = TimerComponent;
 //# sourceMappingURL=timer.component.js.map

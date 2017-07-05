@@ -8,6 +8,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var block2_component_1 = require("./block2.component");
 var Block2HostComponent = (function () {
@@ -16,19 +17,19 @@ var Block2HostComponent = (function () {
     Block2HostComponent.prototype.showAll = function () {
         this.blocks.forEach(function (x) { return x.show(); });
     };
-    __decorate([
-        core_1.ViewChildren(block2_component_1.Block2Component), 
-        __metadata('design:type', core_1.QueryList)
-    ], Block2HostComponent.prototype, "blocks", void 0);
-    Block2HostComponent = __decorate([
-        core_1.Component({
-            moduleId: module.id,
-            selector: "block2-host",
-            templateUrl: "block2-host.component.html"
-        }), 
-        __metadata('design:paramtypes', [])
-    ], Block2HostComponent);
     return Block2HostComponent;
 }());
+__decorate([
+    core_1.ViewChildren(block2_component_1.Block2Component) // для получения доступа ко всем дочерним компонентам указанного типа
+    ,
+    __metadata("design:type", core_1.QueryList)
+], Block2HostComponent.prototype, "blocks", void 0);
+Block2HostComponent = __decorate([
+    core_1.Component({
+        moduleId: module.id,
+        selector: "block2-host",
+        templateUrl: "block2-host.component.html"
+    })
+], Block2HostComponent);
 exports.Block2HostComponent = Block2HostComponent;
 //# sourceMappingURL=block2-host.component.js.map
