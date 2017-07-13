@@ -28,8 +28,7 @@ Sample7Component = __decorate([
         templateUrl: "sample7.component.html",
         providers: [index_1.Logger]
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof core_1.Injector !== "undefined" && core_1.Injector) === "function" && _a || Object])
+    __metadata("design:paramtypes", [core_1.Injector])
 ], Sample7Component);
 exports.Sample7Component = Sample7Component;
-var _a;
 //# sourceMappingURL=sample7.component.js.map
